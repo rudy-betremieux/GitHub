@@ -1,0 +1,9 @@
+.vertical-align {
+  vertical-align: middle;
+}
+
+.vertical-center {
+  left: 0px;
+  position: relative;
+  top: 11px;
+}
