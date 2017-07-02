@@ -1,0 +1,23 @@
+div {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  float: left;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px;
+}
+
+div:nth-child(odd) {
+   background:red;
+}
+
+div:nth-child(even) {
+     background:blue;
+}
+
+#myDiv {
+  width: 30px;
+  height: 30px;
+  background:purple;
+}
