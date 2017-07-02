@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/base.css" rel="stylesheet" />
+  </head>
+  <body>
+
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="token" value="" />
+
+        <div>
+          <label for="firstname">Prénom *</label>
+        </div>
+        <div>
+          <input type="text" id="firstname" name="firstname" value="" placeholder="Votre prénom" required />
+        </div>
+
+        <div>
+          <label for="lastname">Nom *</label>
+        </div>
+        <div>
+          <input type="text" id="lastname" name="lastname" value="" placeholder="Votre nom" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" value="" placeholder="Votre email" />
+        </div>
+
+        <div>
+          <label for="cats">Nombre de chats</label>
+        </div>
+        <div>
+          <input type="number" id="cats" name="cats" value="" disabled />
+        </div>
+
+        <div>
+          <label for="birthday">Date de naissance</label>
+        </div>
+        <div>
+          <input type="date" id="birthday" name="birthday" value="21/06/2017" placeholder="JJ/MM/AAAA" readonly />
+        </div>
+
+        <div>
+          <label for="password">Mot de passe</label>
+        </div>
+        <div>
+          <input type="password" id="password" name="password" value="" placeholder="Votre mot de passe" />
+        </div>
+
+        <div>
+          <label for="avatar">Avatar</label>
+        </div>
+        <div>
+          <input type="file" id="avatar" name="avatar" />
+        </div>
+
+        <div>
+          <label for="files">Fichiers</label>
+        </div>
+        <div>
+          <input type="file" id="files" name="files[]" multiple />
+        </div>
+
+        <div>
+          <label>Mangez-vous des fruits ?</label>
+        </div>
+        <div>
+          <label>Pomme <input checked type="checkbox" id="fruit_1" name="fruits[]" value="1" /></label><br />
+          <label>Poire <input checked type="checkbox" id="fruit_2" name="fruits[]" value="2" /></label><br />
+          <label>Pêche <input type="checkbox" id="fruit_3" name="fruits[]" value="3" /></label><br />
+        </div>
+
+        <div>
+          <label>Quel est votre légume préféré ?</label>
+        </div>
+        <div>
+          <label>Aucun <input checked type="radio" id="vegetable_0" name="vegetable" value="" /></label><br />
+          <label>Concombre <input type="radio" id="vegetable_1" name="vegetable" value="1" /></label><br />
+          <label>Tomate <input type="radio" id="vegetable_2" name="vegetable" value="2" /></label><br />
+          <label>Topinambour <input type="radio" id="vegetable_3" name="vegetable" value="3" /></label><br />
+        </div>
+
+        <div>
+          <label for="color">Quel est votre couleur préférée ?</label>
+        </div>
+        <div>
+          <select id="color" name="color">
+            <option value="">Aucune</option>
+            <option value="1">Rouge</option>
+            <option value="2">Vert</option>
+            <option selected value="3">Bleu</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="days">Quel sont vos jours préférés ?</label>
+        </div>
+        <div>
+          <select id="days" name="days[]" multiple size="5">
+            <option value="1">Dimanche</option>
+            <option selected value="2">Lundi</option>
+            <option selected value="3">Mardi</option>
+            <option value="4">Mercredi</option>
+            <option value="5">Jeudi</option>
+            <option value="6">Vendredi</option>
+            <option value="7">Samedi</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="who_are_you">Qui êtes-vous ?</label>
+        </div>
+        <div>
+          <textarea id="who_are_you" name="who_are_you">Je suis qui je suis.</textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Valider" />
+        </div>
+
+      </form>
+
+  </body>
+</html>
