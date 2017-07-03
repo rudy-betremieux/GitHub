@@ -1,0 +1,29 @@
+div {
+  min-width: 20px;
+  min-height: 20px;
+  margin: 10px;
+  border: 5px solid black;
+  float: left;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px;
+}
+
+div:nth-child(odd) {
+   background:red;
+}
+
+div:nth-child(even) {
+     background:blue;
+}
+
+#myDiv {
+min-width: 30px;
+min-height:30px;
+  background:purple;
+}
+
+#mainDiv {
+  min-width: 200px;
+  min-height: 200px;
+  background-color:grey;
+}
