@@ -1,0 +1,315 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif; }
+
+html, body, #acceuil, ul, nav {
+  width: 100%; }
+
+html {
+  height: 100%; }
+
+body {
+  background: #ffffff url("../image/sayagata-400px.png") center repeat fixed;
+  height: 100%; }
+
+@media screen and (max-width: 767px) {
+  .navbar-nav > li {
+    width: 100%;
+    text-align: center; }
+
+  #cover > div {
+    height: 50%; }
+  #cover #acphoto {
+    position: relative; }
+    #cover #acphoto #github {
+      left: calc(25% - 25px); }
+      #cover #acphoto #github a {
+        background: url("../image/githubgrey.png") center no-repeat; }
+    #cover #acphoto #linkedin {
+      left: calc(50% - 25px); }
+      #cover #acphoto #linkedin a {
+        background: url("../image/Linkedingrey.png") center no-repeat; }
+    #cover #acphoto #twitter {
+      left: calc(75% - 25px); }
+      #cover #acphoto #twitter a {
+        background: url("../image/twittergrey.png") center no-repeat; }
+    #cover #acphoto #photo {
+      width: 40%;
+      margin-top: 30%;
+      margin-left: 30%;
+      border-radius: 100%;
+      z-index: 20; }
+    #cover #acphoto .reseau {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 120%;
+      transform-origin: 100% 50%;
+      z-index: 3; }
+      #cover #acphoto .reseau .bulle {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 100%; }
+        #cover #acphoto .reseau .bulle a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          background-size: 60% !important; } }
+@media screen and (min-width: 768px) {
+  .navbar-nav > li {
+    width: calc(100% / 6);
+    text-align: center; }
+
+  #cover > div {
+    height: 100%; }
+
+  #acphoto {
+    position: relative;
+    top: calc(50% - 125px);
+    left: calc(50% - 125px);
+    z-index: 25; }
+    #acphoto #photo {
+      width: 250px;
+      border-radius: 100%;
+      z-index: 20;
+      position: relative; }
+    #acphoto #github {
+      transform: rotate(0deg); }
+      #acphoto #github a {
+        background: url("../image/githubgrey.png") center no-repeat;
+        transform: rotate(0deg); }
+    #acphoto #linkedin {
+      transform: rotate(0deg); }
+      #acphoto #linkedin a {
+        background: url("../image/Linkedingrey.png") center no-repeat;
+        transform: rotate(0deg); }
+    #acphoto #twitter {
+      transform: rotate(0deg); }
+      #acphoto #twitter a {
+        background: url("../image/twittergrey.png") center no-repeat;
+        transform: rotate(0deg); }
+    #acphoto .reseau {
+      height: 50px;
+      width: 250px;
+      position: absolute;
+      top: 100px;
+      left: -125px;
+      transform-origin: 100% 50%;
+      z-index: 3; }
+      #acphoto .reseau .bar {
+        height: 3px;
+        width: calc(100% - 50px);
+        background-color: white;
+        position: relative;
+        top: calc(50% - 1px);
+        left: 50px; }
+      #acphoto .reseau .bulle {
+        height: 100%;
+        width: 50px;
+        background-color: white;
+        border-radius: 100%; }
+        #acphoto .reseau .bulle a {
+          display: block;
+          height: 50px;
+          width: 50px;
+          border-radius: 100%; } }
+li {
+  list-style: none; }
+
+h1 {
+  margin: 10px 0; }
+
+.icon-bar {
+  border: 1px solid #ff3600; }
+
+.navbar-header {
+  background-color: #0e0f0f; }
+
+.navbar-default {
+  background-color: #0e0f0f;
+  border: 0; }
+  .navbar-default .navbar-collapse {
+    border-color: #0e0f0f; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #242525; }
+  .navbar-default .navbar-nav {
+    background-color: #0e0f0f; }
+    .navbar-default .navbar-nav > li > a {
+      font-family: "Dosis", sans-serif;
+      color: white;
+      font-weight: bold; }
+      .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        background-color: #0e0f0f;
+        color: #ff3600; }
+
+.navbar {
+  margin-bottom: 0; }
+
+/* ACCUEIL */
+#accueil {
+  background: #061015 url("../image/pattern.png") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 350px; }
+  #accueil #cover {
+    position: absolute;
+    height: 100%;
+    min-height: 350px;
+    width: 100%;
+    z-index: 17;
+    vertical-align: top; }
+    #accueil #cover p {
+      color: white;
+      font-family: "Dosis", sans-serif;
+      margin-top: 20px; }
+    #accueil #cover #titre {
+      width: calc(100% - 30px);
+      position: absolute;
+      bottom: calc(50% - 15vw);
+      margin: auto; }
+      #accueil #cover #titre h1 {
+        margin: 0; }
+      #accueil #cover #titre p {
+        color: #818181;
+        font-family: "VT323", monospace;
+        font-size: 30px;
+        position: relative;
+        float: right;
+        bottom: 0;
+        right: calc(50% - 125px);
+        padding-right: 2%; }
+
+h1#sb {
+  font-family: "Righteous", cursive;
+  color: white;
+  font-size: 8vw; }
+
+.blue {
+  color: blue; }
+
+section > header {
+  border-bottom: 2px solid #ff3600;
+  font-family: "VT323", monospace; }
+  section > header > h1 {
+    font-size: 2.5em;
+    padding-left: 1.25em; }
+
+article {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+
+.comp .row {
+  margin: 0; }
+
+.dip li {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  padding: 2px 3px;
+  border: 1px solid rgba(6, 16, 21, 0.3);
+  display: inline-block;
+  margin: 5px 0 0 0;
+  color: rgba(6, 16, 21, 0.5); }
+
+.dip li:hover {
+  background-color: #ff3600;
+  color: white; }
+
+#section_competence article {
+  background-color: transparent; }
+  #section_competence article h3 {
+    font-family: "Dosis", sans-serif; }
+  #section_competence article .comp {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 4px 15px #dadada;
+    margin-bottom: 30px; }
+    #section_competence article .comp h3 {
+      margin-bottom: 50px; }
+    #section_competence article .comp img {
+      height: 50px; }
+    #section_competence article .comp p {
+      margin-bottom: 40px;
+      font-family: "VT323", monospace; }
+
+#section_passion {
+  overflow: hidden; }
+  #section_passion article {
+    padding: 0; }
+  #section_passion .book {
+    background: url("../image/book.jpeg"); }
+  #section_passion .nihon {
+    background: url("../image/Nihon.png"); }
+  #section_passion .eye {
+    background: url("../image/rss.svg"); }
+  #section_passion .interet {
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Righteous", cursive;
+    padding: 0;
+    font-size: 35px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px; }
+    #section_passion .interet p {
+      position: relative;
+      top: calc(50% - 18px);
+      margin: auto; }
+  #section_passion .coverinteret {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    transition: 0.4s; }
+    #section_passion .coverinteret:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff; }
+
+#section_contact article h1 {
+  font-family: "VT323", monospace;
+  font-size: 5vw; }
+
+/* FOOTER */
+footer {
+  background-color: #061015;
+  position: absolute;
+  width: 100%;
+  height: 50px; }
+  footer #twitter a {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 26px;
+    background-image: url("../image/twittergrey.png"); }
+  footer #linkedin a {
+    position: absolute;
+    top: 9px;
+    left: calc(50% - 64px);
+    width: 32px;
+    height: 32px;
+    background-image: url("../image/Linkedingrey.png"); }
+  footer #github a {
+    position: absolute;
+    top: 12px;
+    right: calc(50% - 64px);
+    width: 32px;
+    height: 25px;
+    background-image: url("../image/githubgrey.png"); }
+  footer #twitter a:hover {
+    background-image: url("../image/twitter.png"); }
+  footer #linkedin a:hover {
+    background-image: url("../image/Linkedin.png"); }
+  footer #github a:hover {
+    background-image: url("../image/github.png"); }
+
+/*# sourceMappingURL=style.css.map */
